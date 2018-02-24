@@ -12,3 +12,9 @@ docker exec {containerId} pg_dump -U {userName} -d {database} | gzip -c > db_bac
 ``` bash
 docker exec -i -t {containerId} /bin/bash
 ```
+
+### Select statement in postgresql with the where clause containg a point type without PostGIS
+I bet there is a better way to do this...
+```sql
+select * from my_table where location::text = '1,2'::point::text;
+```
