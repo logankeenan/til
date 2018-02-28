@@ -23,3 +23,9 @@ I bet there is a better way to do this...
 ```sql
 select * from my_table where location::text = '1,2'::point::text;
 ```
+
+### Stop and remove all docker containers
+```bash
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
