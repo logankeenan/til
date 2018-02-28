@@ -8,6 +8,11 @@ This will create a backup in the directory in which the command was executed
 docker exec {containerId} pg_dump -U {userName} -d {database} | gzip -c > db_back.gz
 ```
 
+## Restore a backup of a postgres docker database (the db_back file was unzipped prior to this command)
+```bash
+cat db_back | docker exec -i {containerId} psql -U {userName}
+```
+
 ### Bash session in running container
 ``` bash
 docker exec -i -t {containerId} /bin/bash
