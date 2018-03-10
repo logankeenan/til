@@ -29,3 +29,9 @@ select * from my_table where location::text = '1,2'::point::text;
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
+
+### backup table data from a docker container
+```bash
+docker exec {containerId} pg_dump -U {userName} -d {database} --table={tablName} --data-only > {backupFileName}.sql
+
+```
