@@ -1,6 +1,11 @@
 # til
 Short Snippits of Useful Things
 
+## Make rails/execjs use node installed by nvm
+```bash
+sudo ln -s $(which node) /usr/bin/node
+```
+
 ## Create a backup of a postgres docker database
 This will create a backup in the directory in which the command was executed
 
