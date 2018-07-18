@@ -1,6 +1,9 @@
 # til
 Short Snippits of Useful Things
 
+### RubyMine environment variables
+RubyMine 2018.1 requires ubuntu to restart in order for debug to notice environment variables set in `~/.profile`
+
 ## Make rails/execjs use node installed by nvm
 ```bash
 sudo ln -s $(which node) /usr/bin/node
