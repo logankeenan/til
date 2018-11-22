@@ -1,6 +1,12 @@
 # til
 Short Snippits of Useful Things
 
+### Recreate Rails database
+Rails 5.2.1
+```bash
+rails db:drop db:create db:migrate
+```
+
 ### RubyMine environment variables
 RubyMine 2018.1 requires ubuntu to restart in order for debug to notice environment variables set in `~/.profile`
 
