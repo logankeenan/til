@@ -1,6 +1,11 @@
 # til
 Short Snippits of Useful Things
 
+### Stop psql server on ubuntu
+```bash
+/etc/init.d/postgresql stop
+```
+
 ### Recreate Rails database
 Rails 5.2.1
 ```bash
