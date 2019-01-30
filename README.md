@@ -1,6 +1,13 @@
 # til
 Short Snippits of Useful Things
 
+### Completely clear bash terminal
+```bash 
+printf "\033c"
+
+alias cls='printf "\033c"'
+```
+
 ### Stop psql server on ubuntu
 ```bash
 /etc/init.d/postgresql stop
