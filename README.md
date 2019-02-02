@@ -1,6 +1,11 @@
 # til
 Short Snippits of Useful Things
 
+### Save html of current page in Rails Integration test
+```ruby
+page.save_page
+```
+
 ### Completely clear bash terminal
 ```bash 
 printf "\033c"
