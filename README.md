@@ -1,6 +1,12 @@
 # til
 Short Snippits of Useful Things
 
+### Resize image with vips cli
+```
+vips resize ~/location/of/input.png ~/location/of/output.png scale
+```
+scale is on a 1-0 scale (example: .5). input and output cannot be the same
+
 ### Save html of current page in Rails Integration test
 ```ruby
 page.save_page
