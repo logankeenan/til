@@ -1,6 +1,12 @@
 # til
 Short Snippits of Useful Things
 
+
+### Restoring a heroku postgresql backup to a postgresql docker container
+```
+cat backup_file | docker exec -i dockerContainerId pg_restore -U postgres -d databaseName
+```
+
 ### Resize image with vips cli
 ```
 vips resize ~/location/of/input.png ~/location/of/output.png scale
