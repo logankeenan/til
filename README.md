@@ -1,6 +1,10 @@
 # til
 Short Snippits of Useful Things
 
+### Edit Rails Credentials on Ubuntu
+```
+ EDITOR="vi" rails credentials:edit
+ ```
 
 ### Restoring a heroku postgresql backup to a postgresql docker container
 ```
