@@ -1,6 +1,12 @@
 # til
 Short Snippits of Useful Things
 
+### Run bash command in a loop with a single line
+```bash
+for i in {1..5}; do COMMAND-HERE; done
+```
+[credit](https://www.cyberciti.biz/faq/linux-unix-bash-for-loop-one-line-command/)
+
 ### Edit Rails Credentials on Ubuntu
 ```
  EDITOR="vi" rails credentials:edit
