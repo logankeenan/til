@@ -1,6 +1,14 @@
 # til
 Short Snippits of Useful Things
 
+### Clear Cookies in an Androind WebView
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    CookieManager.getInstance().removeAllCookies(null);
+}
+```
+
 ### Run bash command in a loop with a single line
 ```bash
 for i in {1..5}; do COMMAND-HERE; done
